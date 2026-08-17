@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="Ilustração de uma tabela de dados, etapa de carga com pandas">
+  <rect width="320" height="120" rx="10" fill="#131a24"/>
+  <g transform="translate(18,18)">
+    <rect x="0" y="0" width="150" height="18" rx="3" fill="#2c4a7c"/>
+    <rect x="0" y="22" width="150" height="14" rx="3" fill="#1e2a3a"/>
+    <rect x="0" y="40" width="150" height="14" rx="3" fill="#243244"/>
+    <rect x="0" y="58" width="150" height="14" rx="3" fill="#1e2a3a"/>
+    <rect x="0" y="76" width="150" height="14" rx="3" fill="#243244"/>
+    <line x1="50" y1="0" x2="50" y2="90" stroke="#131a24" stroke-width="3"/>
+    <line x1="100" y1="0" x2="100" y2="90" stroke="#131a24" stroke-width="3"/>
+  </g>
+  <g transform="translate(186,40)">
+    <text x="0" y="0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#e6edf5">pandas</text>
+    <text x="0" y="20" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#8fa3bd">carrega e organiza</text>
+    <text x="0" y="35" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#8fa3bd">a tabela de dados</text>
+  </g>
+</svg>

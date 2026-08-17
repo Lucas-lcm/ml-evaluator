@@ -1,0 +1,20 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Artefatos do Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Segredos: nunca versionar. O Streamlit Cloud tem campo próprio para isso.
+.streamlit/secrets.toml
+project/.streamlit/secrets.toml
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

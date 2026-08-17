@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150" width="720" height="150" role="img" aria-label="Diagrama do ciclo do aprendizado supervisionado: dados, separação, treino, avaliação e uso">
+  <rect width="720" height="150" rx="12" fill="#131a24"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="16" y="40" width="112" height="56" rx="8" fill="#1c2837" stroke="#2c4a7c" stroke-width="1.5"/>
+      <text x="72" y="64" font-size="12" font-weight="600" fill="#e6edf5">1. Dados</text>
+      <text x="72" y="82" font-size="10" fill="#8fa3bd">casos já conhecidos</text>
+    </g>
+    <g>
+      <rect x="152" y="40" width="112" height="56" rx="8" fill="#1c2837" stroke="#2c4a7c" stroke-width="1.5"/>
+      <text x="208" y="64" font-size="12" font-weight="600" fill="#e6edf5">2. Separação</text>
+      <text x="208" y="82" font-size="10" fill="#8fa3bd">treino e teste</text>
+    </g>
+    <g>
+      <rect x="288" y="40" width="112" height="56" rx="8" fill="#1c2837" stroke="#f0913a" stroke-width="1.5"/>
+      <text x="344" y="64" font-size="12" font-weight="600" fill="#e6edf5">3. Treino</text>
+      <text x="344" y="82" font-size="10" fill="#8fa3bd">só com o treino</text>
+    </g>
+    <g>
+      <rect x="424" y="40" width="112" height="56" rx="8" fill="#1c2837" stroke="#f0913a" stroke-width="1.5"/>
+      <text x="480" y="64" font-size="12" font-weight="600" fill="#e6edf5">4. Avaliação</text>
+      <text x="480" y="82" font-size="10" fill="#8fa3bd">só com o teste</text>
+    </g>
+    <g>
+      <rect x="560" y="40" width="144" height="56" rx="8" fill="#1c2837" stroke="#5fd0a0" stroke-width="1.5"/>
+      <text x="632" y="64" font-size="12" font-weight="600" fill="#e6edf5">5. Uso</text>
+      <text x="632" y="82" font-size="10" fill="#8fa3bd">casos novos, com confiança</text>
+    </g>
+  </g>
+  <g stroke="#4a5c74" stroke-width="2" fill="none" marker-end="url(#seta)">
+    <path d="M128 68 H150"/>
+    <path d="M264 68 H286"/>
+    <path d="M400 68 H422"/>
+    <path d="M536 68 H558"/>
+  </g>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4a5c74"/>
+    </marker>
+  </defs>
+  <text x="360" y="128" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#6f8299">O teste nunca participa do treino — é isso que impede uma nota otimista demais.</text>
+</svg>

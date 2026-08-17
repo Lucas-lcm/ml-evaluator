@@ -1,0 +1,47 @@
+# Configuração do ML Evaluator.
+#
+# IMPORTANTE: o Streamlit lê `.streamlit/config.toml` a partir do **diretório de
+# trabalho**, não do diretório do script. Por isso existem duas cópias idênticas
+# no repositório:
+#
+#   ml_evaluator/.streamlit/config.toml          -> usada pelo Streamlit Cloud
+#                                                   (que roda a partir da raiz do repo)
+#   ml_evaluator/project/.streamlit/config.toml  -> usada ao rodar de dentro de project/
+#
+# `tests/test_deploy_config.py` falha se as duas divergirem. Ao mudar uma,
+# mude a outra.
+
+[server]
+# Limite de upload aplicado no servidor. A mesma regra é reaplicada no domínio
+# (scr/core/config.py): defesa em profundidade, para que um bypass da interface
+# ainda encontre a validação da aplicação.
+maxUploadSize = 25
+enableXsrfProtection = true
+enableCORS = false
+
+[client]
+# Esconde o menu de opções de desenvolvedor (Rerun, Clear cache, Record a
+# screencast, Deploy...) para quem acessa o app publicado. É este o parâmetro
+# que "tira o menu de dev".
+#   "auto"      -> mostra para o desenvolvedor, esconde para o visitante (padrão)
+#   "viewer"    -> sempre escondido           <- usado aqui
+#   "minimal"   -> só o que vier de fora ou de st.set_page_config
+#   "developer" -> sempre visível
+toolbarMode = "viewer"
+
+# Mensagens de erro genéricas no navegador; o traceback completo continua no log
+# do servidor. Em uma ferramenta usada por leigos, um traceback na tela assusta
+# sem informar. Troque para "full" quando estiver depurando.
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false
+
+# Tema escuro (spec 3). As cores acompanham as ilustrações em assets/, que foram
+# desenhadas para fundo escuro.
+[theme]
+base = "dark"
+primaryColor = "#4aa3df"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#131a24"
+textColor = "#e6edf5"
