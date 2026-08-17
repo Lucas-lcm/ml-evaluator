@@ -18,3 +18,9 @@ project/.streamlit/secrets.toml
 Thumbs.db
 .idea/
 .vscode/
+
+# Arquivos de testes e de specs
+tests/
+specs/
+AGENTS.MD
+DEPLOY.MD
