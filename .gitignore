@@ -21,6 +21,6 @@ Thumbs.db
 
 # Arquivos de testes e de specs
 tests/
-specs/
+spec/
 AGENTS.MD
 DEPLOY.MD
